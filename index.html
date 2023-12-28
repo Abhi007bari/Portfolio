@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <title>Portfolio website</title>
+</head>
+
+
+<body>
+
+    <!--<div class="wrap-2"><canvas id="liquid"></canvas></div>-->
+    
+    
+    <nav id="desktop-nav">
+        <div class="logo">Abhishek Bari</div>
+        
+        <!----------------------------------------------------------navbar section-------------------------->
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--------------------------------------------------------------Hamburger------------------------------------>
+    <nav id="hamburger-nav">
+        <div class="logo">Abhishek Bari</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-------------------------------------------------------------picture----------------------------------------->
+    <section id="profile">
+        <div class="profile__pic">  <!--section__pic__container-->
+            <img src="/Content/circle img.PNG" alt="Abhishek profile">
+        </div>
+
+        <div class="profile__text">
+            <p class="profile__text__1">Hello, I'am</p>
+            <h1 class="title">Abhishek Bari</h1>
+            <p class="profile__text__2">Frontend Developer</p>
+            
+            <!--<div class="btn-container">-->
+                            <!-----------------------cv button section------------------>
+                <!--<button class="btn btn-color-2" onclick="window.open('/Content/Abhishek-resume .pdf')"
+                >Download CV</button>
+                            <!-----------------------------Contact info section button------>
+                <!--<button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+        </div>
+
+        <div id="social-container">
+            <img src="/Content/linkdin.png" alt="My Linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/abhi-bari-b5bb0b22b/'">
+        <div id="social-container">
+            <img src="/Content/insta.png" alt="My Instagram profile" class="icon" onclick="location.href='https://instagram.com/theabhibari/'">
+        </div>-->
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="about__text">
+        <h2 class="title">About Me</h2>
+        <div class="about-content">
+            <div class="column left">
+                <img src="/Content/square.png" alt="">
+            </div>
+            
+            <di class="column right">
+                <div class="text">Hello there! I'm Abhishek Bari <span>Frontend developer</span></div> 
+                <p> I am always with a passionate to learn new languages.
+                    My journey began with a curiosity for creating visually appealing and responsive websites that seamlessly blend design with functionality. 
+                    I have a solid foundation in HTML, CSS,and JavaScript,and I am constantly exploring new technologies to stay on the cutting edge of frontend development. During my academic journey, I had the opportunity to work on projects that honed my skills in building modern and intuitive user interfaces. 
+                    am particularly enthusiastic about creating seamless and engaging user experiences, and I am eager to contribute my skills to real-world projects.</p>
+                    <div class="btn-container">
+                        <button
+                        class="btn btn-color-2"
+                        onclick="window.open('/Content/Abhishek-resume .pdf')">
+                        Download CV
+                        </button>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="skills">
+    <p class="skills__text__1">Explore My</p>
+    <h1 class="title">Skills</h1>
+    <div class="skills-details-container">
+        <div class="about-container">
+            <div class="details-container">
+                <h2 class="skills-sub-title">Frontend development</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="/Content/check.png" alt="Skills icon" class="icon"/>
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="/Content/check.png" alt="Skills icon" class="icon"/>
+                        <div>
+                            <h3>CSS</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    
+                    <article>
+                        <img src="/Content/check.png" alt="Skills icon" class="icon"/>
+                        <div>
+                            <h3>JavaScript</h3>
+                            <p>Beginner</p>
+                        </div>
+                    </article>
+                    
+                    
+                </div>
+            </div>
+            <div class="details-container">
+                <h2 class="skills-sub-title">Backend development</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="/Content/check.png" alt="Skills icon" class="icon"/>
+                        <div>
+                            <h3>Java</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+        </div>
+    </div>
+</section>
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
